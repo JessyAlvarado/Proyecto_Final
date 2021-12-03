@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace Proyecto_Final.Vistas
         public Login()
         {
             InitializeComponent();
+            LoginController controlador = new LoginController(this);
         }
+
+
     }
 }

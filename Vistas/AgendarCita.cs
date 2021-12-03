@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,22 +15,9 @@ namespace Proyecto_Final.Vistas
     {
         public AgendarCita()
         {
-            InitializeComponent();
+                 InitializeComponent();
+
+
+                AgendarCitaController controller = new AgendarCitaController(this);
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-    }
 }
