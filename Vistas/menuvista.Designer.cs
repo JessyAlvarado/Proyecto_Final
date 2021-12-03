@@ -68,7 +68,7 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(776, 175);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -114,10 +114,10 @@ namespace Proyecto_Final.Vistas
             // 
             this.toolStripEx1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ribbonControlAdv1.SetDisplayMode(this.toolStripEx1, Syncfusion.Windows.Forms.Tools.RibbonItemDisplayMode.Normal);
             this.toolStripEx1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripEx1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx1.Image = null;
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CONSULTAR});
@@ -126,7 +126,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx1.Size = new System.Drawing.Size(32, 109);
+            this.toolStripEx1.Size = new System.Drawing.Size(77, 109);
             this.toolStripEx1.TabIndex = 0;
             this.toolStripEx1.Text = "CONSULTAR";
             this.toolStripEx1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripEx1_ItemClicked);
@@ -138,7 +138,7 @@ namespace Proyecto_Final.Vistas
             this.CONSULTAR.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.CONSULTAR.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CONSULTAR.Name = "CONSULTAR";
-            this.CONSULTAR.Size = new System.Drawing.Size(23, 92);
+            this.CONSULTAR.Size = new System.Drawing.Size(28, 92);
             this.CONSULTAR.Text = "consultar";
             this.CONSULTAR.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
