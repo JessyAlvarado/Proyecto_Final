@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class Consultasvista : Form
+    public partial class AgendarCita : Form
     {
-        public Consultasvista()
+        public AgendarCita()
         {
             InitializeComponent();
         }

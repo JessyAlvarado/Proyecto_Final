@@ -37,6 +37,8 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -52,25 +54,29 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem1);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem2);
-            this.ribbonControlAdv1.Location = new System.Drawing.Point(12, 12);
+            this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem3);
+            this.ribbonControlAdv1.Location = new System.Drawing.Point(16, 15);
+            this.ribbonControlAdv1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonControlAdv1.MenuButtonFont = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ribbonControlAdv1.MenuButtonText = "";
             this.ribbonControlAdv1.MenuButtonWidth = 56;
             this.ribbonControlAdv1.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(198)))));
+            this.ribbonControlAdv1.MinimumSize = new System.Drawing.Size(0, 82);
             this.ribbonControlAdv1.Name = "ribbonControlAdv1";
             this.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed;
             // 
             // ribbonControlAdv1.OfficeMenu
             // 
+            this.ribbonControlAdv1.OfficeMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ribbonControlAdv1.OfficeMenu.Name = "OfficeMenu";
             this.ribbonControlAdv1.OfficeMenu.ShowItemToolTips = true;
             this.ribbonControlAdv1.OfficeMenu.Size = new System.Drawing.Size(12, 65);
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
-            this.ribbonControlAdv1.Size = new System.Drawing.Size(776, 175);
+            this.ribbonControlAdv1.Size = new System.Drawing.Size(1035, 215);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.ribbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:";
             this.ribbonControlAdv1.TabIndex = 0;
@@ -85,14 +91,16 @@ namespace Proyecto_Final.Vistas
             // ribbonControlAdv1.ribbonPanel1
             // 
             this.toolStripTabItem1.Panel.Controls.Add(this.toolStripEx1);
+            this.toolStripTabItem1.Panel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripTabItem1.Panel.Name = "ribbonPanel1";
+            this.toolStripTabItem1.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 47, 0);
             this.toolStripTabItem1.Panel.ScrollPosition = 0;
             this.toolStripTabItem1.Panel.TabIndex = 2;
-            this.toolStripTabItem1.Panel.Text = "Consultas";
+            this.toolStripTabItem1.Panel.Text = "CONSULTAS LEGALES";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(74, 30);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(162, 41);
             this.toolStripTabItem1.Tag = "1";
-            this.toolStripTabItem1.Text = "Consultas";
+            this.toolStripTabItem1.Text = "CONSULTAS LEGALES";
             // 
             // toolStripEx1
             // 
@@ -103,6 +111,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.toolStripEx1.Image = null;
+            this.toolStripEx1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CONSULTAR});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 1);
@@ -110,7 +119,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx1.Size = new System.Drawing.Size(46, 109);
+            this.toolStripEx1.Size = new System.Drawing.Size(48, 130);
             this.toolStripEx1.TabIndex = 0;
             this.toolStripEx1.Text = "CONSULTAR";
             this.toolStripEx1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripEx1_ItemClicked);
@@ -122,7 +131,7 @@ namespace Proyecto_Final.Vistas
             this.CONSULTAR.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.CONSULTAR.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CONSULTAR.Name = "CONSULTAR";
-            this.CONSULTAR.Size = new System.Drawing.Size(28, 92);
+            this.CONSULTAR.Size = new System.Drawing.Size(29, 110);
             this.CONSULTAR.Text = "consultar";
             this.CONSULTAR.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
@@ -133,14 +142,16 @@ namespace Proyecto_Final.Vistas
             // ribbonControlAdv1.ribbonPanel2
             // 
             this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
+            this.toolStripTabItem2.Panel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
+            this.toolStripTabItem2.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 47, 0);
             this.toolStripTabItem2.Panel.ScrollPosition = 0;
             this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "Servicios";
+            this.toolStripTabItem2.Panel.Text = "CONOCENOS";
             this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(67, 30);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(114, 41);
             this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "Servicios";
+            this.toolStripTabItem2.Text = "CONOCENOS";
             // 
             // toolStripEx2
             // 
@@ -151,6 +162,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.toolStripEx2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx2.Image = null;
+            this.toolStripEx2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripEx2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
             this.toolStripEx2.Location = new System.Drawing.Point(0, 1);
@@ -158,7 +170,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(32, 109);
+            this.toolStripEx2.Size = new System.Drawing.Size(38, 130);
             this.toolStripEx2.TabIndex = 1;
             this.toolStripEx2.Text = "SERVICIOS";
             // 
@@ -169,16 +181,47 @@ namespace Proyecto_Final.Vistas
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 92);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 110);
             this.toolStripButton1.Text = "consultar";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
+            // toolStripTabItem3
+            // 
+            this.toolStripTabItem3.Name = "toolStripTabItem3";
+            // 
+            // ribbonControlAdv1.ribbonPanel3
+            // 
+            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
+            this.toolStripTabItem3.Panel.ScrollPosition = 0;
+            this.toolStripTabItem3.Panel.TabIndex = 4;
+            this.toolStripTabItem3.Panel.Text = "AGENDAR CITAS";
+            this.toolStripTabItem3.Position = 2;
+            this.toolStripTabItem3.Size = new System.Drawing.Size(131, 41);
+            this.toolStripTabItem3.Tag = "3";
+            this.toolStripTabItem3.Text = "AGENDAR CITAS";
+            // 
+            // toolStripTabItem4
+            // 
+            this.toolStripTabItem4.Name = "toolStripTabItem4";
+            // 
+            // 
+            // 
+            this.toolStripTabItem4.Panel.Name = "";
+            this.toolStripTabItem4.Panel.ScrollPosition = 0;
+            this.toolStripTabItem4.Panel.TabIndex = 5;
+            this.toolStripTabItem4.Panel.Text = "toolStripTabItem4";
+            this.toolStripTabItem4.Position = -1;
+            this.toolStripTabItem4.Size = new System.Drawing.Size(137, 41);
+            this.toolStripTabItem4.Tag = "4";
+            this.toolStripTabItem4.Text = "toolStripTabItem4";
+            // 
             // menuvista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ribbonControlAdv1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "menuvista";
             this.Text = "menuvista";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).EndInit();
@@ -205,5 +248,7 @@ namespace Proyecto_Final.Vistas
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton CONSULTAR;
+        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem3;
+        private Syncfusion.Windows.Forms.Tools.ToolStripTabItem toolStripTabItem4;
     }
 }
