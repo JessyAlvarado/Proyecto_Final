@@ -61,9 +61,9 @@ namespace Proyecto_Final.Vistas
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Handwriting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 42);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(888, 516);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -73,7 +73,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(552, 203);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(316, 305);
             this.button1.TabIndex = 6;
@@ -84,7 +84,7 @@ namespace Proyecto_Final.Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(101, 309);
+            this.label4.Location = new System.Drawing.Point(97, 364);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(288, 36);
             this.label4.TabIndex = 5;
@@ -95,11 +95,11 @@ namespace Proyecto_Final.Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(207, 263);
+            this.label3.Location = new System.Drawing.Point(136, 285);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 36);
+            this.label3.Size = new System.Drawing.Size(249, 36);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Jessy Lagos";
+            this.label3.Text = "Jessy Alvarado";
             // 
             // label2
             // 
@@ -131,7 +131,7 @@ namespace Proyecto_Final.Vistas
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(953, 594);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "conocenos";
             this.Text = "Conocenos";
             this.groupBox1.ResumeLayout(false);

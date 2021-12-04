@@ -88,7 +88,7 @@ namespace Proyecto_Final.Modelos.DAO
             return modifico;
         }
 
-        internal static bool CreacionNuevaCita(AgendarCitaView agendar)
+        internal static bool CreacionNuevaCita(AgendarCita agendar)
         {
             throw new NotImplementedException();
         }

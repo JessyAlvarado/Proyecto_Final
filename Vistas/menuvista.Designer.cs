@@ -33,14 +33,14 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.CONSULTAR = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.CONSULTAR = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
@@ -77,7 +77,7 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(1035, 215);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -101,7 +101,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "CONSULTAS LEGALES";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(148, 25);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(162, 41);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "CONSULTAS LEGALES";
             // 
@@ -122,10 +122,20 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx1.Size = new System.Drawing.Size(87, 130);
+            this.toolStripEx1.Size = new System.Drawing.Size(48, 130);
             this.toolStripEx1.TabIndex = 0;
             this.toolStripEx1.Text = "CONSULTAR";
-         
+            // 
+            // CONSULTAR
+            // 
+            this.CONSULTAR.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CONSULTAR.Image = ((System.Drawing.Image)(resources.GetObject("CONSULTAR.Image")));
+            this.CONSULTAR.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CONSULTAR.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.CONSULTAR.Name = "CONSULTAR";
+            this.CONSULTAR.Size = new System.Drawing.Size(29, 110);
+            this.CONSULTAR.Text = "consultar";
+            this.CONSULTAR.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // toolStripTabItem2
             // 
@@ -141,7 +151,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem2.Panel.TabIndex = 3;
             this.toolStripTabItem2.Panel.Text = "CONOCENOS";
             this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(100, 25);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(114, 41);
             this.toolStripTabItem2.Tag = "2";
             this.toolStripTabItem2.Text = "CONOCENOS";
             // 
@@ -165,6 +175,17 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.Size = new System.Drawing.Size(38, 130);
             this.toolStripEx2.TabIndex = 1;
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 110);
+            this.toolStripButton1.Text = "consultar";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            // 
             // toolStripTabItem3
             // 
             this.toolStripTabItem3.Name = "toolStripTabItem3";
@@ -177,24 +198,9 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem3.Panel.TabIndex = 4;
             this.toolStripTabItem3.Panel.Text = "AGENDAR CITAS";
             this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(117, 25);
+            this.toolStripTabItem3.Size = new System.Drawing.Size(131, 41);
             this.toolStripTabItem3.Tag = "3";
             this.toolStripTabItem3.Text = "AGENDAR CITAS";
-            // 
-            // toolStripTabItem4
-            // 
-            this.toolStripTabItem4.Name = "toolStripTabItem4";
-            // 
-            // 
-            // 
-            this.toolStripTabItem4.Panel.Name = "";
-            this.toolStripTabItem4.Panel.ScrollPosition = 0;
-            this.toolStripTabItem4.Panel.TabIndex = 5;
-            this.toolStripTabItem4.Panel.Text = "toolStripTabItem4";
-            this.toolStripTabItem4.Position = -1;
-            this.toolStripTabItem4.Size = new System.Drawing.Size(137, 41);
-            this.toolStripTabItem4.Tag = "4";
-            this.toolStripTabItem4.Text = "toolStripTabItem4";
             // 
             // toolStripEx3
             // 
@@ -214,28 +220,6 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx3.Size = new System.Drawing.Size(38, 130);
             this.toolStripEx3.TabIndex = 0;
             // 
-            // CONSULTAR
-            // 
-            this.CONSULTAR.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CONSULTAR.Image = ((System.Drawing.Image)(resources.GetObject("CONSULTAR.Image")));
-            this.CONSULTAR.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.CONSULTAR.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CONSULTAR.Name = "CONSULTAR";
-            this.CONSULTAR.Size = new System.Drawing.Size(29, 110);
-            this.CONSULTAR.Text = "consultar";
-            this.CONSULTAR.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 110);
-            this.toolStripButton1.Text = "consultar";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            // 
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -244,6 +228,21 @@ namespace Proyecto_Final.Vistas
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(29, 110);
             this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripTabItem4
+            // 
+            this.toolStripTabItem4.Name = "toolStripTabItem4";
+            // 
+            // 
+            // 
+            this.toolStripTabItem4.Panel.Name = "";
+            this.toolStripTabItem4.Panel.ScrollPosition = 0;
+            this.toolStripTabItem4.Panel.TabIndex = 5;
+            this.toolStripTabItem4.Panel.Text = "toolStripTabItem4";
+            this.toolStripTabItem4.Position = -1;
+            this.toolStripTabItem4.Size = new System.Drawing.Size(137, 41);
+            this.toolStripTabItem4.Tag = "4";
+            this.toolStripTabItem4.Text = "toolStripTabItem4";
             // 
             // menuvista
             // 

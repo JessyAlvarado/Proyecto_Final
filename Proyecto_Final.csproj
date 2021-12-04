@@ -55,11 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\AgendarCitaController.cs" />
+    <Compile Include="Controladores\ConsultasLegalesController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Modelos\DAO\AgendarCitaDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
+    <Compile Include="Modelos\DAO\ConsultasLegalesDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\AgendarCita.cs" />
+    <Compile Include="Modelos\Entidades\ConsultasLegales.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -36,7 +36,7 @@ namespace Proyecto_Final.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(808, 476);
+            this.ClientSize = new System.Drawing.Size(847, 476);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.ResumeLayout(false);
