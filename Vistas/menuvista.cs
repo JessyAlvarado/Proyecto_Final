@@ -108,7 +108,10 @@ namespace Proyecto_Final.Vistas
             }
         }
 
-        
+        private void toolStripEx2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
 }
