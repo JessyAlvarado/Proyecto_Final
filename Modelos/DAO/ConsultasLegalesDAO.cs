@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Proyecto_Final.Modelos.DAO
 {
     class ConsultasLegalesDAO
+
     {
     }
 }
