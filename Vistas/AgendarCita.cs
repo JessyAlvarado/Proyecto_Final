@@ -20,5 +20,10 @@ namespace Proyecto_Final.Vistas
 
             AgendarCitaController controller = new AgendarCitaController(this);
         }
+
+        private void AgendarCita_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

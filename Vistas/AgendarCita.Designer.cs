@@ -292,6 +292,7 @@ namespace Proyecto_Final.Vistas
             this.Controls.Add(this.label1);
             this.Name = "AgendarCita";
             this.Text = "AgendarCita";
+            this.Load += new System.EventHandler(this.AgendarCita_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgendardataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
