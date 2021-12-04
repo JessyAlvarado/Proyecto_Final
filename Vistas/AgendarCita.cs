@@ -15,9 +15,10 @@ namespace Proyecto_Final.Vistas
     {
         public AgendarCita()
         {
-                 InitializeComponent();
+            InitializeComponent();
 
 
-                AgendarCitaController controller = new AgendarCitaController(this);
+            AgendarCitaController controller = new AgendarCitaController(this);
         }
+    }
 }

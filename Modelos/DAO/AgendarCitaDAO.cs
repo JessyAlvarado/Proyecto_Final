@@ -18,18 +18,18 @@ namespace Proyecto_Final.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" INSERT INTO TICKETS ");
+                sql.Append(" INSERT INTO AGENDAR ");
                 sql.Append(" VALUES (@Servicio, @NombreCliente, @Email, @Direccion, @DescripcionCaso); ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
-                comando.Parameters.Add("@Servicio", SqlDbType.NVarChar, 50).Value = creacion.TipoSoporte;
+                comando.Parameters.Add("@Servicio", SqlDbType.NVarChar, 50).Value = creacion.Servicio;
                 comando.Parameters.Add("@NombreCliente", SqlDbType.NVarChar, 80).Value = creacion.NombreCliente;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = creacion.Email;
                 comando.Parameters.Add("@Direccion", SqlDbType.NVarChar, 80).Value = creacion.Direccion;
-                comando.Parameters.Add("@DescripcionCaso", SqlDbType.NVarChar, 100).Value = creacion.DescripcionProblema;
+                comando.Parameters.Add("@DescripcionCaso", SqlDbType.NVarChar, 100).Value = creacion.DescripcionCaso;
                 comando.ExecuteNonQuery();
                 return true;
                 MiConexion.Close();
@@ -68,7 +68,7 @@ namespace Proyecto_Final.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" DELETE FROM TICKETS ");
+                sql.Append(" DELETE FROM AGENDAR ");
                 sql.Append(" WHERE ID = @Id; ");
 
                 comando.Connection = MiConexion;
@@ -88,6 +88,9 @@ namespace Proyecto_Final.Modelos.DAO
             return modifico;
         }
 
-
+        internal static bool CreacionNuevaCita(AgendarCitaView agendar)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

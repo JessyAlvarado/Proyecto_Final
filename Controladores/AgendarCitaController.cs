@@ -1,4 +1,6 @@
 ﻿using Proyecto_Final.Modelos.DAO;
+using Proyecto_Final.Modelos.Entidades;
+using Proyecto_Final.Vistas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +12,13 @@ namespace Proyecto_Final.Controladores
 {
     public class AgendarCitaController
     {
-        AgendarCita vista;
+        AgendarCitaView vista;
         string operacion = string.Empty;
         AgendarCitaDAO creacionDAO = new AgendarCitaDAO();
-        AgendarCita Agendar = new AgendarCita();
+        AgendarCitaView Agendar = new Vistas.AgendarCita();
+        private Vistas.AgendarCita agendarCita;
 
-        public AgendarCitaController(AgendarCita view)
+        public AgendarCitaController(AgendarCitaView view)
         {
             vista = view;
             vista.NuevoButton.Click += new EventHandler(Nuevo);
@@ -23,6 +26,11 @@ namespace Proyecto_Final.Controladores
             vista.Load += new EventHandler(Load);
             vista.EliminarButton.Click += new EventHandler(Eliminar);
             vista.CancelarButton.Click += new EventHandler(Cancelar);
+        }
+
+        public AgendarCitaController(Vistas.AgendarCita agendarCita)
+        {
+            this.agendarCita = agendarCita;
         }
 
         private void Cancelar(object sender, EventArgs e)
@@ -45,7 +53,7 @@ namespace Proyecto_Final.Controladores
                     MessageBox.Show("Cita eliminada exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
 
-                    ListarTickets();
+                    ListarCitas();
                 }
             }
         }
@@ -58,15 +66,15 @@ namespace Proyecto_Final.Controladores
 
         private void Load(object serder, EventArgs e)
         {
-            ListarTickets();
+            ListarCitas();
         }
 
         private void Guardar(object serder, EventArgs e)
         {
             if (vista.ServiciosComboBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.TipoSoporteComboBox, "Ingrese el tipo de servicio que necesita");
-                vista.TipoSoporteComboBox.Focus();
+                vista.errorProvider1.SetError(vista.ServiciosComboBox, "Ingrese el tipo de servicio que necesita");
+                vista.ServiciosComboBox.Focus();
                 return;
             }
             if (vista.NombreClienteTextBox.Text == "")
@@ -94,13 +102,13 @@ namespace Proyecto_Final.Controladores
                 return;
             }
 
-            Agendar.TipoSoporte = vista.TipoSoporteComboBox.Text;
+            Agendar.Servicio = vista.ServiciosComboBox.Text;
             Agendar.NombreCliente = vista.NombreClienteTextBox.Text;
             Agendar.Email = vista.EmailTextBox.Text;
             Agendar.Direccion = vista.DireccionTextBox.Text;
             Agendar.DescripcionProblema = vista.DescripcionProblemaTextBox.Text;
 
-            bool inserto = AgendarDAO.CreacionNuevoTicket(Agendar);
+            bool inserto = AgendarCitaDAO.CreacionNuevaCita(Agendar);
 
             if (operacion == "Nuevo")
             {
@@ -111,7 +119,7 @@ namespace Proyecto_Final.Controladores
                     LimpiarControles();
                     MessageBox.Show("Ticket creado exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTickets();
+                    ListarCitas();
 
                 }
                 else
@@ -124,9 +132,9 @@ namespace Proyecto_Final.Controladores
 
         }
 
-        private void ListarTickets()
+        private void ListarCitas()
         {
-            vista.AgendardataGridView.DataSource = AgendarDAO.GetTickets();
+            vista.AgendardataGridView.DataSource = AgendarCitaDAO.GetAgendar();
         }
 
         private void LimpiarControles()
@@ -171,3 +179,4 @@ namespace Proyecto_Final.Controladores
 
     }
 }
+
