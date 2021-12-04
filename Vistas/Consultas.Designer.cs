@@ -169,7 +169,7 @@ namespace Proyecto_Final.Vistas
             this.groupBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(7, 66);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(593, 310);
+            this.groupBox1.Size = new System.Drawing.Size(593, 263);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CONSULTAS ";
@@ -245,9 +245,9 @@ namespace Proyecto_Final.Vistas
             // 
             this.ConsultasdataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.ConsultasdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultasdataGridView.Location = new System.Drawing.Point(7, 390);
+            this.ConsultasdataGridView.Location = new System.Drawing.Point(7, 346);
             this.ConsultasdataGridView.Name = "ConsultasdataGridView";
-            this.ConsultasdataGridView.Size = new System.Drawing.Size(735, 122);
+            this.ConsultasdataGridView.Size = new System.Drawing.Size(735, 166);
             this.ConsultasdataGridView.TabIndex = 24;
             // 
             // Consultas
@@ -263,7 +263,7 @@ namespace Proyecto_Final.Vistas
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.groupBox1.ResumeLayout(false);
