@@ -193,6 +193,7 @@ namespace Proyecto_Final.Vistas
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(202, 21);
             this.ServiciosComboBox.TabIndex = 14;
+            this.ServiciosComboBox.SelectedIndexChanged += new System.EventHandler(this.ServiciosComboBox_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

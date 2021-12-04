@@ -16,5 +16,10 @@ namespace Proyecto_Final.Vistas
         {
             InitializeComponent();
         }
+
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
