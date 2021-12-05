@@ -14,7 +14,7 @@ namespace Proyecto_Final.Modelos.DAO
     {
         SqlCommand comando = new SqlCommand();
 
-        public bool EstadoConsulta(ConsultasLegales consultasLegales)
+        public bool ConsultasLegales(ConsultasLegales consultas)
         {
             try
             {
@@ -26,10 +26,10 @@ namespace Proyecto_Final.Modelos.DAO
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
-                comando.Parameters.Add("@Servicios", SqlDbType.NVarChar, 50).Value = consultasLegales.Servicios;
-                comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 50).Value = consultasLegales.Nombre;
-                comando.Parameters.Add("@NumeroIde", SqlDbType.Decimal).Value = consultasLegales.NumeroID;
-                comando.Parameters.Add("@Descripcion", SqlDbType.NVarChar, 80).Value = consultasLegales.Descripcion;
+                comando.Parameters.Add("@Servicios", SqlDbType.NVarChar, 50).Value = consultas.Servicios;
+                comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 50).Value = consultas.Nombre;
+                comando.Parameters.Add("@NumeroIde", SqlDbType.Decimal).Value = consultas.NumeroID;
+                comando.Parameters.Add("@Descripcion", SqlDbType.NVarChar, 80).Value = consultas.Descripcion;
                 comando.ExecuteNonQuery();
                 return true;
                 MiConexion.Close();
@@ -40,7 +40,7 @@ namespace Proyecto_Final.Modelos.DAO
             }
         }
 
-        public DataTable GetTipo()
+        public DataTable GetConsultas()
         {
             DataTable dt = new DataTable();
             try
@@ -62,7 +62,7 @@ namespace Proyecto_Final.Modelos.DAO
             return dt;
         }
 
-        public bool EliminarTipo(int id)
+        public bool EliminarConsulta(int id)
         {
             bool modifico = false;
             try
@@ -86,6 +86,11 @@ namespace Proyecto_Final.Modelos.DAO
                 return modifico;
             }
             return modifico;
+        }
+
+        internal static bool CreacionNuevaConsulta(ConsultasLegales consultas)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -175,7 +175,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx2.Size = new System.Drawing.Size(38, 130);
             this.toolStripEx2.TabIndex = 1;
-            this.toolStripEx2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripEx2_ItemClicked);
+         
             // 
             // toolStripButton1
             // 

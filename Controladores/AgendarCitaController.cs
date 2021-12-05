@@ -15,8 +15,8 @@ namespace Proyecto_Final.Controladores
         AgendarCitaView vista;
         string operacion = string.Empty;
         AgendarCitaDAO creacionDAO = new AgendarCitaDAO();
-        AgendarCitaView Agendar = new Vistas.AgendarCitaView();
-        private Vistas.AgendarCitaView agendarCita;
+        AgendarCita Agendar = new AgendarCita();
+       
 
         public AgendarCitaController(AgendarCitaView view)
         {
@@ -130,7 +130,7 @@ namespace Proyecto_Final.Controladores
 
         private void ListarCitas()
         {
-            vista.AgendardataGridView.DataSource = AgendarCitaDAO.GetAgendar();
+            vista.AgendardataGridView.DataSource = creacionDAO.GetAgendar();
         }
 
         private void LimpiarControles()

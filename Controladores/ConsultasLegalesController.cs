@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Controladores
 {
-    class ConsultasLegalesController
+    public class ConsultasLegalesController
     {
         ConsultasView vista;
         string operacion = string.Empty;
         ConsultasLegalesDAO ConsultasLegalesDAO = new ConsultasLegalesDAO();
-        ConsultasLegales ConsultasLegales = new ConsultasLegales();
+        ConsultasLegales consultas = new  ConsultasLegales();
+       
 
         public ConsultasLegalesController(ConsultasView view)
         {
@@ -31,13 +32,13 @@ namespace Proyecto_Final.Controladores
         {
             DesabilitarControles();
             LimpiarControles();
-            ConsultasLegales = null;
+            consultas = null;
         }
         private void Eliminar(object serder, EventArgs e)
         {
             if (vista.ConsultasDataGridView.SelectedRows.Count > 0)
             {
-                bool elimino = ConsultasLegalesDAO.EliminarTipo(Convert.ToInt32(vista.ConsultasDataGridView.CurrentRow.Cells[0].Value.ToString()));
+                bool elimino = ConsultasLegalesDAO.EliminarConsulta(Convert.ToInt32(vista.ConsultasDataGridView.CurrentRow.Cells[0].Value.ToString()));
 
                 if (elimino)
                 {
@@ -91,12 +92,12 @@ namespace Proyecto_Final.Controladores
                 return;
             }
 
-            ConsultasLegales.Servicios = vista.ServiciosComboBox.Text;
-            ConsultasLegales.Nombre = vista.NombreTextBox.Text;
-            ConsultasLegales.NumeroID= Convert.ToDecimal(vista.NumidTextBox.Text);
-            ConsultasLegales.Descripcion = vista.DescripcionTextBox.Text;
+            consultas.Servicios = vista.ServiciosComboBox.Text;
+            consultas.Nombre = vista.NombreTextBox.Text;
+            consultas.NumeroID= Convert.ToDecimal(vista.NumidTextBox.Text);
+            consultas.Descripcion = vista.DescripcionTextBox.Text;
 
-            bool inserto = ConsultasLegalesDAO.EstadoConsulta(ConsultasLegales);
+            bool inserto = ConsultasLegalesDAO.ConsultasLegales(consultas);
 
             if (operacion == "Nuevo")
             {
@@ -122,7 +123,7 @@ namespace Proyecto_Final.Controladores
 
         private void ListarConsultas()
         {
-            vista.ConsultasDataGridView.DataSource = ConsultasLegalesDAO.GetTipo();
+            vista.ConsultasDataGridView.DataSource = ConsultasLegalesDAO.GetConsultas();
         }
 
         private void LimpiarControles()

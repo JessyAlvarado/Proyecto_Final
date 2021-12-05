@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Final.Modelos.Entidades
 {
-    class ConsultasLegales
+    public class ConsultasLegales
     {
         public int Id { get; set; }
         public string Servicios { get; set; }
