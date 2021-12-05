@@ -13,7 +13,7 @@ namespace Proyecto_Final.Modelos.DAO
     {
         SqlCommand comando = new SqlCommand();
 
-        public object MiConexion { get; private set; }
+        
 
         public bool ValidarUsuario(Usuario user)
         {
