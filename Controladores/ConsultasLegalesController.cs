@@ -1,19 +1,23 @@
-﻿using System;
+﻿using Proyecto_Final.Modelos.DAO;
+using Proyecto_Final.Modelos.Entidades;
+using Proyecto_Final.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Proyecto_Final.Controladores
 {
     class ConsultasLegalesController
     {
-        TipoSoporteView vista;
+        ConsultasView vista;
         string operacion = string.Empty;
-        TipoSoporteDAO tiposoporteDAO = new TipoSoporteDAO();
-        TipoSoportes tiposoporte = new TipoSoportes();
+        ConsultasLegalesDAO ConsultasLegalesDAO = new ConsultasLegalesDAO();
+        ConsultasLegales ConsultasLegales = new ConsultasLegales();
 
-        public TipoSoporteController(TipoSoporteView view)
+        public ConsultasLegalesController(ConsultasView view)
         {
             vista = view;
             vista.NuevoButton.Click += new EventHandler(Nuevo);
@@ -27,23 +31,23 @@ namespace Proyecto_Final.Controladores
         {
             DesabilitarControles();
             LimpiarControles();
-            tiposoporte = null;
+            ConsultasLegales = null;
         }
         private void Eliminar(object serder, EventArgs e)
         {
-            if (vista.TipoDataGridView.SelectedRows.Count > 0)
+            if (vista.ConsultasDataGridView.SelectedRows.Count > 0)
             {
-                bool elimino = tiposoporteDAO.EliminarTipo(Convert.ToInt32(vista.TipoDataGridView.CurrentRow.Cells[0].Value.ToString()));
+                bool elimino = ConsultasLegalesDAO.EliminarTipo(Convert.ToInt32(vista.ConsultasDataGridView.CurrentRow.Cells[0].Value.ToString()));
 
                 if (elimino)
                 {
                     DesabilitarControles();
                     LimpiarControles();
 
-                    MessageBox.Show("Tipo de soporte eliminado exitosamente", "Atención", MessageBoxButtons.OK,
+                    MessageBox.Show("Consulta eliminada exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
 
-                    ListarTickets();
+                    ListarConsultas();
                 }
             }
         }
@@ -56,43 +60,43 @@ namespace Proyecto_Final.Controladores
 
         private void Load(object serder, EventArgs e)
         {
-            ListarTickets();
+            ListarConsultas();
         }
 
         private void Guardar(object serder, EventArgs e)
         {
 
-            if (vista.TipoSoporteComboBox.Text == "")
+            if (vista.ServiciosComboBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.TipoSoporteComboBox, "Ingrese el tipo de soporte");
-                vista.TipoSoporteComboBox.Focus();
+                vista.errorProvider1.SetError(vista.ServiciosComboBox, "Ingrese el tipo de servicio");
+                vista.ServiciosComboBox.Focus();
                 return;
             }
-            if (vista.DispositivoTextBox.Text == "")
+            if (vista.NombreTextBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.DispositivoTextBox, "Ingrese el tipo de dispositivo");
-                vista.DispositivoTextBox.Focus();
+                vista.errorProvider1.SetError(vista.NombreTextBox, "Ingrese su nombre ");
+                vista.NombreTextBox.Focus();
                 return;
             }
-            if (vista.PrecioTextBox.Text == "")
+            if (vista.NumidTextBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.PrecioTextBox, "Ingrese el precio del tipo de soporte");
-                vista.PrecioTextBox.Focus();
+                vista.errorProvider1.SetError(vista.NumidTextBox, "Ingrese su numero de identidad");
+                vista.NumidTextBox.Focus();
                 return;
             }
             if (vista.DescripcionTextBox.Text == "")
             {
-                vista.errorProvider1.SetError(vista.DescripcionTextBox, "Ingrese el nombre del cliente");
+                vista.errorProvider1.SetError(vista.DescripcionTextBox, "Ingrese la descripcion del caso");
                 vista.DescripcionTextBox.Focus();
                 return;
             }
 
-            tiposoporte.TipoSoporte = vista.TipoSoporteComboBox.Text;
-            tiposoporte.Dispositivo = vista.DispositivoTextBox.Text;
-            tiposoporte.Precio = Convert.ToDecimal(vista.PrecioTextBox.Text);
-            tiposoporte.Descripcion = vista.DescripcionTextBox.Text;
+            ConsultasLegales.Servicios = vista.ServiciosComboBox.Text;
+            ConsultasLegales.Nombre = vista.NombreTextBox.Text;
+            ConsultasLegales.NumeroID= Convert.ToDecimal(vista.NumidTextBox.Text);
+            ConsultasLegales.Descripcion = vista.DescripcionTextBox.Text;
 
-            bool inserto = tiposoporteDAO.EstadoTicket(tiposoporte);
+            bool inserto = ConsultasLegalesDAO.EstadoConsulta(ConsultasLegales);
 
             if (operacion == "Nuevo")
             {
@@ -101,14 +105,14 @@ namespace Proyecto_Final.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-                    MessageBox.Show("Nuevo tipo de soporte creado exitosamente", "Atención", MessageBoxButtons.OK,
+                    MessageBox.Show("Nueva consulta creada exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
-                    ListarTickets();
+                    ListarConsultas();
 
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo crear el tipo de soporte", "Atención", MessageBoxButtons.OK,
+                    MessageBox.Show("No se pudo hacer la consulta", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                 }
             }
@@ -116,26 +120,26 @@ namespace Proyecto_Final.Controladores
 
         }
 
-        private void ListarTickets()
+        private void ListarConsultas()
         {
-            vista.TipoDataGridView.DataSource = tiposoporteDAO.GetTipo();
+            vista.ConsultasDataGridView.DataSource = ConsultasLegalesDAO.GetTipo();
         }
 
         private void LimpiarControles()
         {
             vista.IdTextBox.Clear();
-            vista.TipoSoporteComboBox.Text = "";
-            vista.DispositivoTextBox.Clear();
-            vista.PrecioTextBox.Clear();
+            vista.ServiciosComboBox.Text = "";
+            vista.NombreTextBox.Clear();
+            vista.NumidTextBox.Clear();
             vista.DescripcionTextBox.Clear();
         }
 
         private void HabilitarControles()
         {
             vista.IdTextBox.Enabled = true;
-            vista.TipoSoporteComboBox.Enabled = true;
-            vista.DispositivoTextBox.Enabled = true;
-            vista.PrecioTextBox.Enabled = true;
+            vista.ServiciosComboBox.Enabled = true;
+            vista.NombreTextBox.Enabled = true;
+            vista.NumidTextBox.Enabled = true;
             vista.DescripcionTextBox.Enabled = true;
 
             vista.GuardarButton.Enabled = true;
@@ -146,9 +150,9 @@ namespace Proyecto_Final.Controladores
         private void DesabilitarControles()
         {
             vista.IdTextBox.Enabled = false;
-            vista.TipoSoporteComboBox.Enabled = false;
-            vista.DispositivoTextBox.Enabled = false;
-            vista.PrecioTextBox.Enabled = false;
+            vista.ServiciosComboBox.Enabled = false;
+            vista.NombreTextBox.Enabled = false;
+            vista.NumidTextBox.Enabled = false;
             vista.DescripcionTextBox.Enabled = false;
 
             vista.GuardarButton.Enabled = false;

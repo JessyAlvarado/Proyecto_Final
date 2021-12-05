@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class Consultas : Form
+    public partial class ConsultasView : Form
     {
-        public Consultas()
+        public ConsultasView()
         {
             InitializeComponent();
             ConsultasLegalesController controller = new ConsultasLegalesController(this);
