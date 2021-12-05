@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class AgendarCita : Form
+    public partial class AgendarCitaView : Form
     {
-        public AgendarCita()
+        public AgendarCitaView()
         {
             InitializeComponent();
 

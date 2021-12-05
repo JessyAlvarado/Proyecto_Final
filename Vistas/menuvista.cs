@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class menuvista : Form
+    public partial class MenuView : Form
     {
         public partial class MenuView : Syncfusion.Windows.Forms.Office2010Form
         {

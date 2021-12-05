@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proyecto_Final.Modelos.DAO
+namespace Proyecto_Final.Modelos.DAO  
 {
-    public class UsuarioDAO
+    public class UsuarioDAO : Conexion
     {
         SqlCommand comando = new SqlCommand();
 

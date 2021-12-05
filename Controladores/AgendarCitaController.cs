@@ -15,8 +15,8 @@ namespace Proyecto_Final.Controladores
         AgendarCitaView vista;
         string operacion = string.Empty;
         AgendarCitaDAO creacionDAO = new AgendarCitaDAO();
-        AgendarCitaView Agendar = new Vistas.AgendarCita();
-        private Vistas.AgendarCita agendarCita;
+        AgendarCitaView Agendar = new Vistas.AgendarCitaView();
+        private Vistas.AgendarCitaView agendarCita;
 
         public AgendarCitaController(AgendarCitaView view)
         {
@@ -28,11 +28,7 @@ namespace Proyecto_Final.Controladores
             vista.CancelarButton.Click += new EventHandler(Cancelar);
         }
 
-        public AgendarCitaController(Vistas.AgendarCita agendarCita)
-        {
-            this.agendarCita = agendarCita;
-        }
-
+       
         private void Cancelar(object sender, EventArgs e)
         {
             DesabilitarControles();
@@ -117,14 +113,14 @@ namespace Proyecto_Final.Controladores
                 {
                     DesabilitarControles();
                     LimpiarControles();
-                    MessageBox.Show("Ticket creado exitosamente", "Atención", MessageBoxButtons.OK,
+                    MessageBox.Show("Cita creada exitosamente", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
                     ListarCitas();
 
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo crear el Ticket", "Atención", MessageBoxButtons.OK,
+                    MessageBox.Show("No se pudo crear la cita", "Atención", MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                 }
             }
