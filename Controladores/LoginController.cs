@@ -30,7 +30,7 @@ namespace Proyecto_Final.Controladores
                 Usuario user = new Usuario();
 
                 user.Email = vista.EmailTextBox.Text;
-                user.Clave = EncriptarClave(vista.ClaveTextBox.Text);
+                //
 
                 esValido = userDao.ValidarUsuario(user);
 
@@ -51,17 +51,10 @@ namespace Proyecto_Final.Controladores
 
             }
 
-            public static string EncriptarClave(string str)
-            {
-                string cadena = str + "MiClavePersonal";
-                SHA256 sha256 = SHA256Managed.Create();
-                ASCIIEncoding encoding = new ASCIIEncoding();
-                byte[] stream = null;
-                StringBuilder sb = new StringBuilder();
-                stream = sha256.ComputeHash(encoding.GetBytes(cadena));
-                for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
-                return sb.ToString();
-            }
+
+        //
+
+           
         }
     
 }

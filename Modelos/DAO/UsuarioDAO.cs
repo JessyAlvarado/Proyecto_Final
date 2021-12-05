@@ -23,7 +23,7 @@ namespace Proyecto_Final.Modelos.DAO
                 StringBuilder sql = new StringBuilder();
                 sql.Append(" SELECT 1 FROM USUARIO WHERE EMAIL = @Email AND CLAVE = @Clave;");
 
-                comando.Connection = MiConexion;
+                comando.Connection = (SqlConnection)MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
