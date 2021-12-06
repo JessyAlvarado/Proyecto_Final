@@ -48,9 +48,11 @@ namespace Proyecto_Final.Vistas
             this.GuardarButton = new System.Windows.Forms.Button();
             this.ConsultasDataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@ namespace Proyecto_Final.Vistas
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(311, 11);
+            this.label1.Location = new System.Drawing.Point(406, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(461, 44);
             this.label1.TabIndex = 2;
@@ -194,7 +196,7 @@ namespace Proyecto_Final.Vistas
             this.CancelarButton.BackColor = System.Drawing.Color.DarkRed;
             this.CancelarButton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelarButton.ForeColor = System.Drawing.Color.Black;
-            this.CancelarButton.Location = new System.Drawing.Point(824, 346);
+            this.CancelarButton.Location = new System.Drawing.Point(822, 358);
             this.CancelarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(165, 59);
@@ -207,7 +209,7 @@ namespace Proyecto_Final.Vistas
             this.EliminarButton.BackColor = System.Drawing.Color.DarkRed;
             this.EliminarButton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.ForeColor = System.Drawing.Color.Black;
-            this.EliminarButton.Location = new System.Drawing.Point(824, 266);
+            this.EliminarButton.Location = new System.Drawing.Point(822, 271);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(165, 59);
@@ -220,7 +222,7 @@ namespace Proyecto_Final.Vistas
             this.NuevoButton.BackColor = System.Drawing.Color.DarkRed;
             this.NuevoButton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.ForeColor = System.Drawing.Color.Black;
-            this.NuevoButton.Location = new System.Drawing.Point(825, 108);
+            this.NuevoButton.Location = new System.Drawing.Point(822, 96);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(165, 66);
@@ -233,7 +235,7 @@ namespace Proyecto_Final.Vistas
             this.GuardarButton.BackColor = System.Drawing.Color.DarkRed;
             this.GuardarButton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.Black;
-            this.GuardarButton.Location = new System.Drawing.Point(824, 186);
+            this.GuardarButton.Location = new System.Drawing.Point(822, 186);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(165, 60);
@@ -247,23 +249,33 @@ namespace Proyecto_Final.Vistas
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultasDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.ConsultasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultasDataGridView.Location = new System.Drawing.Point(-2, 439);
+            this.ConsultasDataGridView.Location = new System.Drawing.Point(-2, 457);
             this.ConsultasDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.ConsultasDataGridView.Name = "ConsultasDataGridView";
             this.ConsultasDataGridView.RowHeadersWidth = 51;
-            this.ConsultasDataGridView.Size = new System.Drawing.Size(1013, 204);
+            this.ConsultasDataGridView.Size = new System.Drawing.Size(1332, 186);
             this.ConsultasDataGridView.TabIndex = 24;
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Final.Properties.Resources.consultas;
+            this.pictureBox1.Location = new System.Drawing.Point(1044, 155);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(254, 157);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
             // ConsultasView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1007, 644);
+            this.ClientSize = new System.Drawing.Size(1326, 644);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ConsultasDataGridView);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.EliminarButton);
@@ -278,6 +290,7 @@ namespace Proyecto_Final.Vistas
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConsultasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +316,6 @@ namespace Proyecto_Final.Vistas
         public System.Windows.Forms.Button GuardarButton;
         public System.Windows.Forms.ErrorProvider errorProvider1;
         public System.Windows.Forms.DataGridView ConsultasDataGridView;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

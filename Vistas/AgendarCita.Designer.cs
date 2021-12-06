@@ -61,7 +61,7 @@ namespace Proyecto_Final.Vistas
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(269, 22);
+            this.label1.Location = new System.Drawing.Point(436, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(353, 44);
             this.label1.TabIndex = 1;
@@ -72,7 +72,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(239, 100);
+            this.label2.Location = new System.Drawing.Point(486, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 31);
             this.label2.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(157, 160);
+            this.label3.Location = new System.Drawing.Point(403, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 31);
             this.label3.TabIndex = 3;
@@ -92,7 +92,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 231);
+            this.label4.Location = new System.Drawing.Point(285, 238);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(259, 31);
             this.label4.TabIndex = 4;
@@ -102,7 +102,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(177, 295);
+            this.label5.Location = new System.Drawing.Point(438, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 31);
             this.label5.TabIndex = 5;
@@ -112,7 +112,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(147, 367);
+            this.label6.Location = new System.Drawing.Point(403, 367);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 31);
             this.label6.TabIndex = 6;
@@ -122,7 +122,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 450);
+            this.label7.Location = new System.Drawing.Point(268, 436);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(285, 31);
             this.label7.TabIndex = 7;
@@ -131,7 +131,7 @@ namespace Proyecto_Final.Vistas
             // IDTXT
             // 
             this.IDTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDTXT.Location = new System.Drawing.Point(313, 100);
+            this.IDTXT.Location = new System.Drawing.Point(579, 122);
             this.IDTXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDTXT.Name = "IDTXT";
             this.IDTXT.ReadOnly = true;
@@ -141,7 +141,7 @@ namespace Proyecto_Final.Vistas
             // NombreClienteTextBox
             // 
             this.NombreClienteTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombreClienteTextBox.Location = new System.Drawing.Point(312, 224);
+            this.NombreClienteTextBox.Location = new System.Drawing.Point(579, 244);
             this.NombreClienteTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombreClienteTextBox.Name = "NombreClienteTextBox";
             this.NombreClienteTextBox.Size = new System.Drawing.Size(268, 27);
@@ -150,7 +150,7 @@ namespace Proyecto_Final.Vistas
             // EmailTextBox
             // 
             this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTextBox.Location = new System.Drawing.Point(312, 295);
+            this.EmailTextBox.Location = new System.Drawing.Point(579, 301);
             this.EmailTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(268, 27);
@@ -159,7 +159,7 @@ namespace Proyecto_Final.Vistas
             // DireccionTextBox
             // 
             this.DireccionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DireccionTextBox.Location = new System.Drawing.Point(312, 370);
+            this.DireccionTextBox.Location = new System.Drawing.Point(579, 373);
             this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(268, 27);
@@ -168,7 +168,7 @@ namespace Proyecto_Final.Vistas
             // DescripcionProblemaTextBox
             // 
             this.DescripcionProblemaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DescripcionProblemaTextBox.Location = new System.Drawing.Point(312, 457);
+            this.DescripcionProblemaTextBox.Location = new System.Drawing.Point(579, 442);
             this.DescripcionProblemaTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DescripcionProblemaTextBox.Name = "DescripcionProblemaTextBox";
             this.DescripcionProblemaTextBox.Size = new System.Drawing.Size(369, 27);
@@ -183,7 +183,7 @@ namespace Proyecto_Final.Vistas
             "Familiar",
             "Mercantiles",
             "Laborales"});
-            this.ServiciosComboBox.Location = new System.Drawing.Point(312, 160);
+            this.ServiciosComboBox.Location = new System.Drawing.Point(579, 183);
             this.ServiciosComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(268, 24);
@@ -192,10 +192,10 @@ namespace Proyecto_Final.Vistas
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(708, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 133);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(183, 142);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 250);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -203,7 +203,7 @@ namespace Proyecto_Final.Vistas
             // GuardarButton
             // 
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarButton.Location = new System.Drawing.Point(708, 266);
+            this.GuardarButton.Location = new System.Drawing.Point(1008, 200);
             this.GuardarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(165, 71);
@@ -214,7 +214,7 @@ namespace Proyecto_Final.Vistas
             // NuevoButton
             // 
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NuevoButton.Location = new System.Drawing.Point(708, 191);
+            this.NuevoButton.Location = new System.Drawing.Point(1008, 100);
             this.NuevoButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(165, 71);
@@ -225,7 +225,7 @@ namespace Proyecto_Final.Vistas
             // EliminarButton
             // 
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarButton.Location = new System.Drawing.Point(708, 351);
+            this.EliminarButton.Location = new System.Drawing.Point(1008, 301);
             this.EliminarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(165, 71);
@@ -236,7 +236,7 @@ namespace Proyecto_Final.Vistas
             // CancelarButton
             // 
             this.CancelarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelarButton.Location = new System.Drawing.Point(708, 430);
+            this.CancelarButton.Location = new System.Drawing.Point(1008, 402);
             this.CancelarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(165, 71);
@@ -255,7 +255,7 @@ namespace Proyecto_Final.Vistas
             this.AgendardataGridView.Name = "AgendardataGridView";
             this.AgendardataGridView.RowHeadersWidth = 51;
             this.AgendardataGridView.RowTemplate.Height = 24;
-            this.AgendardataGridView.Size = new System.Drawing.Size(941, 127);
+            this.AgendardataGridView.Size = new System.Drawing.Size(1296, 127);
             this.AgendardataGridView.TabIndex = 20;
             // 
             // errorProvider1
@@ -266,8 +266,8 @@ namespace Proyecto_Final.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(941, 634);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1296, 634);
             this.Controls.Add(this.AgendardataGridView);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.EliminarButton);
