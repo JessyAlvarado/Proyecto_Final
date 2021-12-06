@@ -25,7 +25,6 @@ namespace Proyecto_Final.Vistas
         
      
 
-
         private void ConsultaToolStripButton_Click_1(object sender, EventArgs e)
         {
             if (vistaConsultas == null)
@@ -47,9 +46,38 @@ namespace Proyecto_Final.Vistas
             vistaConsultas = null;
         }
 
+
+        
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      
+        
         
 
-        private void AgendarToolStripButton_Click_1(object sender, EventArgs e)
+        
+        private void ConocenosoolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (vistaConocenos == null)
+            {
+                vistaConocenos = new ConocenosView();
+                vistaConocenos.MdiParent = this;
+                vistaConocenos.FormClosed += Vista_FormClosedConocenos;
+                vistaConocenos.Show();
+            }
+            else
+            {
+                vistaConocenos.Activate();
+            }
+        }
+
+        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
+        {
+            vistaConocenos = null;
+        }
+
+
+
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        private void AgendarToolStripButton2_Click(object sender, EventArgs e)
         {
             if (vistaAgendar == null)
             {
@@ -64,38 +92,10 @@ namespace Proyecto_Final.Vistas
             }
         }
 
+
         private void Vista_FormClosedAgendar(object sender, FormClosedEventArgs e)
         {
             vistaAgendar = null;
-        }
-
-       
-
-        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
-        {
-            vistaConocenos = null;
-        }
-
-        
-
-        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
-        {
-            vistaConocenos = null;
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            if (vistaConocenos == null)
-            {
-                vistaConocenos = new ConocenosView();
-                vistaConocenos.MdiParent = this;
-                vistaConocenos.FormClosed += Vista_FormClosedConocenos;
-                vistaConocenos.Show();
-            }
-            else
-            {
-                vistaConocenos.Activate();
-            }
         }
     }
 }

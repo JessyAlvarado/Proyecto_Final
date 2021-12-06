@@ -39,8 +39,8 @@ namespace Proyecto_Final.Vistas
             this.ConocenosToolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.ConocenosoolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.AgendarToolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.AgendarToolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.tabbedMDIManager1 = new Syncfusion.Windows.Forms.Tools.TabbedMDIManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
@@ -50,7 +50,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem2.Panel.SuspendLayout();
             this.ConocenosToolStripEx2.SuspendLayout();
             this.toolStripTabItem3.Panel.SuspendLayout();
-            this.toolStripEx3.SuspendLayout();
+            this.AgendarToolStripEx3.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControlAdv1
@@ -79,7 +79,7 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(1330, 192);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -191,7 +191,7 @@ namespace Proyecto_Final.Vistas
             this.ConocenosoolStripButton1.Size = new System.Drawing.Size(109, 87);
             this.ConocenosoolStripButton1.Text = "Despacho Legal";
             this.ConocenosoolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ConocenosoolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.ConocenosoolStripButton1.Click += new System.EventHandler(this.ConocenosoolStripButton1_Click);
             // 
             // toolStripTabItem3
             // 
@@ -201,7 +201,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.toolStripTabItem3.Panel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
+            this.toolStripTabItem3.Panel.Controls.Add(this.AgendarToolStripEx3);
             this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
             this.toolStripTabItem3.Panel.ScrollPosition = 0;
             this.toolStripTabItem3.Panel.TabIndex = 4;
@@ -211,33 +211,34 @@ namespace Proyecto_Final.Vistas
             this.toolStripTabItem3.Tag = "3";
             this.toolStripTabItem3.Text = "AGENDAR CITAS";
             // 
-            // toolStripEx3
+            // AgendarToolStripEx3
             // 
-            this.toolStripEx3.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStripEx3.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.toolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.toolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStripEx3.Image = null;
-            this.toolStripEx3.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripEx3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton2});
-            this.toolStripEx3.Location = new System.Drawing.Point(0, 1);
-            this.toolStripEx3.Name = "toolStripEx3";
-            this.toolStripEx3.Office12Mode = false;
-            this.toolStripEx3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx3.Size = new System.Drawing.Size(74, 107);
-            this.toolStripEx3.TabIndex = 0;
+            this.AgendarToolStripEx3.Dock = System.Windows.Forms.DockStyle.None;
+            this.AgendarToolStripEx3.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.AgendarToolStripEx3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.AgendarToolStripEx3.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.AgendarToolStripEx3.Image = null;
+            this.AgendarToolStripEx3.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.AgendarToolStripEx3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AgendarToolStripButton2});
+            this.AgendarToolStripEx3.Location = new System.Drawing.Point(0, 1);
+            this.AgendarToolStripEx3.Name = "AgendarToolStripEx3";
+            this.AgendarToolStripEx3.Office12Mode = false;
+            this.AgendarToolStripEx3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.AgendarToolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AgendarToolStripEx3.Size = new System.Drawing.Size(113, 107);
+            this.AgendarToolStripEx3.TabIndex = 0;
             // 
-            // toolStripButton2
+            // AgendarToolStripButton2
             // 
-            this.toolStripButton2.Image = global::Proyecto_Final.Properties.Resources.calendario;
-            this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(65, 87);
-            this.toolStripButton2.Text = "Agendar";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.AgendarToolStripButton2.Image = global::Proyecto_Final.Properties.Resources.calendario;
+            this.AgendarToolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.AgendarToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.AgendarToolStripButton2.Name = "AgendarToolStripButton2";
+            this.AgendarToolStripButton2.Size = new System.Drawing.Size(65, 87);
+            this.AgendarToolStripButton2.Text = "Agendar";
+            this.AgendarToolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.AgendarToolStripButton2.Click += new System.EventHandler(this.AgendarToolStripButton2_Click);
             // 
             // toolStripTabItem4
             // 
@@ -289,8 +290,8 @@ namespace Proyecto_Final.Vistas
             this.ConocenosToolStripEx2.PerformLayout();
             this.toolStripTabItem3.Panel.ResumeLayout(false);
             this.toolStripTabItem3.Panel.PerformLayout();
-            this.toolStripEx3.ResumeLayout(false);
-            this.toolStripEx3.PerformLayout();
+            this.AgendarToolStripEx3.ResumeLayout(false);
+            this.AgendarToolStripEx3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -307,7 +308,7 @@ namespace Proyecto_Final.Vistas
         private Syncfusion.Windows.Forms.Tools.TabbedMDIManager tabbedMDIManager1;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx ConocenosToolStripEx2;
         private System.Windows.Forms.ToolStripButton ConocenosoolStripButton1;
-        private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx3;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private Syncfusion.Windows.Forms.Tools.ToolStripEx AgendarToolStripEx3;
+        private System.Windows.Forms.ToolStripButton AgendarToolStripButton2;
     }
 }
