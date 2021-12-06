@@ -187,7 +187,7 @@ namespace Proyecto_Final.Vistas
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(268, 24);
             this.ServiciosComboBox.TabIndex = 14;
-            this.ServiciosComboBox.SelectedIndexChanged += new System.EventHandler(this.ServiciosComboBox_SelectedIndexChanged);
+            
             // 
             // pictureBox1
             // 
@@ -288,7 +288,7 @@ namespace Proyecto_Final.Vistas
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AgendarCitaView";
             this.Text = "AgendarCita";
-            this.Load += new System.EventHandler(this.AgendarCita_Load);
+          
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgendardataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

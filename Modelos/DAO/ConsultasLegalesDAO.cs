@@ -19,8 +19,8 @@ namespace Proyecto_Final.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" INSERT INTO TIPOSOPORTE ");
-                sql.Append(" VALUES (@TipoSoportes, @Dispositivo, @Precio, @Descripcion); ");
+                sql.Append(" INSERT INTO CONSULTA ");
+                sql.Append(" VALUES (@Servicios, @Nombre, @NumeroIde, @Descripcion); ");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();

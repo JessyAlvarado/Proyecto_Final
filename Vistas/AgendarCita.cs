@@ -21,14 +21,6 @@ namespace Proyecto_Final.Vistas
             AgendarCitaController controller = new AgendarCitaController(this);
         }
 
-        private void AgendarCita_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ServiciosComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

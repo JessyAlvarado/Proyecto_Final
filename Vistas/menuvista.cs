@@ -22,13 +22,59 @@ namespace Proyecto_Final.Vistas
         ConsultasView vistaConsultas;
        
 
-        private void AgendarToolStripButton_Click(object sender, EventArgs e)
+        
+     
+
+
+        private void ConsultaToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            if (vistaConsultas == null)
+            {
+                vistaConsultas = new ConsultasView();
+                vistaConsultas.MdiParent = this;
+                vistaConsultas.FormClosed += Vista_FormClosedConsultas;
+                vistaConsultas.Show();
+            }
+            else
+            {
+                vistaConsultas.Activate();
+            }
+        }
+
+
+        private void Vista_FormClosedConsultas(object sender, FormClosedEventArgs e)
+        {
+            vistaConsultas = null;
+        }
+
+        private void ConocenosToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            if (vistaConocenos == null)
+            {
+                vistaConocenos = new ConocenosView();
+              
+                vistaConocenos.FormClosed += Vista_FormClosedConocenos;
+                vistaConocenos.Show();
+            }
+            else
+            {
+                vistaConocenos.Activate();
+            }
+        }
+
+
+        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
+        {
+            vistaConocenos = null;
+        }
+
+        private void AgendarToolStripButton_Click_1(object sender, EventArgs e)
         {
             if (vistaAgendar == null)
             {
                 vistaAgendar = new AgendarCitaView();
                 vistaAgendar.MdiParent = this;
-                vistaAgendar.FormClosed += Vista_FormClosedTipo;
+                vistaAgendar.FormClosed += Vista_FormClosedAgendar;
                 vistaAgendar.Show();
             }
             else
@@ -37,54 +83,10 @@ namespace Proyecto_Final.Vistas
             }
         }
 
-        private void Vista_FormClosedTipo(object sender, FormClosedEventArgs e)
+        private void Vista_FormClosedAgendar(object sender, FormClosedEventArgs e)
         {
             vistaAgendar = null;
         }
-
-        private void ConsultaToolStripButton_Click(object sender, EventArgs e)
-        {
-            if (vistaConsultas == null)
-            {
-                vistaConsultas = new ConsultasView();
-                vistaConsultas.MdiParent = this;
-                vistaConsultas.FormClosed += Vista_FormClosedEstado;
-                vistaConsultas.Show();
-            }
-            else
-            {
-                vistaConsultas.Activate();
-            }
-
-        }
-
-        private void Vista_FormClosedEstado(object sender, FormClosedEventArgs e)
-        {
-            vistaConsultas = null;
-        }
-
-        private void ConocenosToolStripButton_Click(object sender, EventArgs e)
-        {
-            if (vistaConocenos == null)
-            {
-                vistaConocenos = new ConocenosView();
-                vistaConocenos.MdiParent = this;
-                vistaConocenos.FormClosed += Vista_FormClosedCreacion;
-                vistaConocenos.Show();
-            }
-            else
-            {
-                vistaConocenos.Activate();
-            }
-
-        }
-
-        private void Vista_FormClosedCreacion(object sender, FormClosedEventArgs e)
-        {
-            vistaConocenos = null;
-        }
-
-        
     }
 }
 

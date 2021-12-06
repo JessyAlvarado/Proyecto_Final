@@ -77,7 +77,7 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(1035, 215);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -138,6 +138,7 @@ namespace Proyecto_Final.Vistas
             this.ConsultaToolStripButton.Text = "consultar";
             this.ConsultaToolStripButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ConsultaToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ConsultaToolStripButton.Click += new System.EventHandler(this.ConsultaToolStripButton_Click_1);
             // 
             // toolStripTabItem2
             // 
@@ -187,6 +188,7 @@ namespace Proyecto_Final.Vistas
             this.ConocenosToolStripButton.Size = new System.Drawing.Size(29, 110);
             this.ConocenosToolStripButton.Text = "consultar";
             this.ConocenosToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.ConocenosToolStripButton.Click += new System.EventHandler(this.ConocenosToolStripButton_Click_1);
             // 
             // toolStripTabItem3
             // 
@@ -219,7 +221,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx3.Office12Mode = false;
             this.toolStripEx3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx3.Size = new System.Drawing.Size(38, 130);
+            this.toolStripEx3.Size = new System.Drawing.Size(77, 130);
             this.toolStripEx3.TabIndex = 0;
             // 
             // AgendarToolStripButton
@@ -230,6 +232,7 @@ namespace Proyecto_Final.Vistas
             this.AgendarToolStripButton.Name = "AgendarToolStripButton";
             this.AgendarToolStripButton.Size = new System.Drawing.Size(29, 110);
             this.AgendarToolStripButton.Text = "toolStripButton2";
+            this.AgendarToolStripButton.Click += new System.EventHandler(this.AgendarToolStripButton_Click_1);
             // 
             // toolStripTabItem4
             // 
