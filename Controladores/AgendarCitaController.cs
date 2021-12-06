@@ -104,7 +104,7 @@ namespace Proyecto_Final.Controladores
             Agendar.Direccion = vista.DireccionTextBox.Text;
             Agendar.DescripcionCaso = vista.DescripcionProblemaTextBox.Text;
 
-            bool inserto = AgendarCitaDAO.CreacionNuevaCita(Agendar);
+            bool inserto = creacionDAO.AgendarCita(Agendar);
 
             if (operacion == "Nuevo")
             {

@@ -19,14 +19,14 @@ namespace Proyecto_Final.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append(" SELECT 1 FROM USUARIO WHERE EMAIL = @Email AND CLAVE = @Clave;");
+                sql.Append(" SELECT 1 FROM USUARIOS WHERE EMAIL = @Email AND CLAVE = @Clave;");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = user.Email;
-                comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 100).Value = user.Clave;
+                comando.Parameters.Add("@Clave", SqlDbType.NVarChar, 80).Value = user.Clave;
                 valido = Convert.ToBoolean(comando.ExecuteScalar());
                 MiConexion.Close();
             }

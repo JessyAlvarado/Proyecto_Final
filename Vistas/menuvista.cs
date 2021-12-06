@@ -87,6 +87,8 @@ namespace Proyecto_Final.Vistas
         {
             vistaAgendar = null;
         }
+
+        
     }
 }
 

@@ -14,7 +14,7 @@ namespace Proyecto_Final.Controladores
     {
         ConsultasView vista;
         string operacion = string.Empty;
-        ConsultasLegalesDAO ConsultasLegalesDAO = new ConsultasLegalesDAO();
+        ConsultasLegalesDAO ConsultasDAO = new ConsultasLegalesDAO();
         ConsultasLegales consultas = new  ConsultasLegales();
        
 
@@ -38,7 +38,7 @@ namespace Proyecto_Final.Controladores
         {
             if (vista.ConsultasDataGridView.SelectedRows.Count > 0)
             {
-                bool elimino = ConsultasLegalesDAO.EliminarConsulta(Convert.ToInt32(vista.ConsultasDataGridView.CurrentRow.Cells[0].Value.ToString()));
+                bool elimino = ConsultasDAO.EliminarConsulta(Convert.ToInt32(vista.ConsultasDataGridView.CurrentRow.Cells[0].Value.ToString()));
 
                 if (elimino)
                 {
@@ -97,7 +97,7 @@ namespace Proyecto_Final.Controladores
             consultas.NumeroID= Convert.ToDecimal(vista.NumidTextBox.Text);
             consultas.Descripcion = vista.DescripcionTextBox.Text;
 
-            bool inserto = ConsultasLegalesDAO.ConsultasLegales(consultas);
+            bool inserto = ConsultasDAO.ConsultasLegales(consultas);
 
             if (operacion == "Nuevo")
             {
@@ -123,7 +123,7 @@ namespace Proyecto_Final.Controladores
 
         private void ListarConsultas()
         {
-            vista.ConsultasDataGridView.DataSource = ConsultasLegalesDAO.GetConsultas();
+            vista.ConsultasDataGridView.DataSource = ConsultasDAO.GetConsultas();
         }
 
         private void LimpiarControles()
