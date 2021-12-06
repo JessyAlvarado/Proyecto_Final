@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Final.Vistas
 {
-    partial class conocenos
+    partial class ConocenosView
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Proyecto_Final.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(conocenos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConocenosView));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -124,7 +124,7 @@ namespace Proyecto_Final.Vistas
             this.infolbl.TabIndex = 2;
             this.infolbl.Text = resources.GetString("infolbl.Text");
             // 
-            // conocenos
+            // ConocenosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@ namespace Proyecto_Final.Vistas
             this.ClientSize = new System.Drawing.Size(953, 594);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "conocenos";
+            this.Name = "ConocenosView";
             this.Text = "Conocenos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

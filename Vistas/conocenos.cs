@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Vistas
 {
-    public partial class conocenos : Form
+    public partial class ConocenosView : Form
     {
-        public conocenos()
+        public ConocenosView()
         {
             InitializeComponent();
         }
