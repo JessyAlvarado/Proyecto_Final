@@ -79,6 +79,7 @@ namespace Proyecto_Final.Vistas
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(268, 27);
             this.EmailTextBox.TabIndex = 3;
+            this.EmailTextBox.Text = "alexcastro@gmail.com";
             // 
             // ClaveTextBox
             // 
@@ -88,6 +89,7 @@ namespace Proyecto_Final.Vistas
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.Size = new System.Drawing.Size(268, 27);
             this.ClaveTextBox.TabIndex = 4;
+            this.ClaveTextBox.Text = "123";
             // 
             // groupBox1
             // 

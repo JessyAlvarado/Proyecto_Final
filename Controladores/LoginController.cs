@@ -11,51 +11,47 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final.Controladores
 {
-   
-        public class LoginController
+
+    public class LoginController
+    {
+        Login vista;
+
+        public LoginController(Login view)
         {
-            Login vista;
+            vista = view;
 
-            public LoginController(Login view)
-            {
-                vista = view;
-
-                vista.AceptarButton.Click += new EventHandler(ValidarUsuarios);
-            }
-
-            private void ValidarUsuarios(object serder, EventArgs e)
-            {
-                bool esValido = false;
-                UsuarioDAO userDao = new UsuarioDAO();
-
-                Usuarios user = new Usuarios();
-
-                user.Email = vista.EmailTextBox.Text;
-                //
-
-                esValido = userDao.ValidarUsuarios(user);
-
-                if (esValido)
-                {
-                    MessageBox.Show("Usuario Correcto");
-
-                    MenuView menu = new MenuView();
-                    vista.Hide();
-                    menu.Show();
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Usuario Incorrecto");
-                }
-
-            }
-
-
-        //
-
-           
+            vista.AceptarButton.Click += new EventHandler(ValidarUsuario);
         }
-    
+
+        private void ValidarUsuario(object serder, EventArgs e)
+        {
+            bool esValido = false;
+            UsuarioDAO userDao = new UsuarioDAO();
+
+            Usuario user = new Usuario();
+
+            user.Email = vista.EmailTextBox.Text;
+            user.Clave = vista.ClaveTextBox.Text;
+
+            esValido = userDao.ValidarUsuario(user);
+
+            if (esValido)
+            {
+                MessageBox.Show("Usuario Correcto");
+
+                MenuView menu = new MenuView();
+                vista.Hide();
+                menu.Show();
+
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario Incorrecto");
+            }
+
+        }
+
+       
+    }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proyecto_Final.Modelos.Entidades
 {
-    public class Usuarios
+    public class Usuario
     {
         public int Id { get; set; }
         public string Nombre { get; set; }

@@ -11,6 +11,5 @@ namespace Proyecto_Final.Modelos.DAO
     public class Conexion
     {
         protected SqlConnection MiConexion = new SqlConnection(ConfigurationManager.ConnectionStrings["MiConexionBD"].ConnectionString);
-
     }
 }
