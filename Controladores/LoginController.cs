@@ -20,20 +20,20 @@ namespace Proyecto_Final.Controladores
             {
                 vista = view;
 
-                vista.AceptarButton.Click += new EventHandler(ValidarUsuario);
+                vista.AceptarButton.Click += new EventHandler(ValidarUsuarios);
             }
 
-            private void ValidarUsuario(object serder, EventArgs e)
+            private void ValidarUsuarios(object serder, EventArgs e)
             {
                 bool esValido = false;
                 UsuarioDAO userDao = new UsuarioDAO();
 
-                Usuario user = new Usuario();
+                Usuarios user = new Usuarios();
 
                 user.Email = vista.EmailTextBox.Text;
                 //
 
-                esValido = userDao.ValidarUsuario(user);
+                esValido = userDao.ValidarUsuarios(user);
 
                 if (esValido)
                 {

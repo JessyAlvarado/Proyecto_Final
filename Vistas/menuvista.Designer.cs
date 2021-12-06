@@ -174,7 +174,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(77, 130);
+            this.toolStripEx2.Size = new System.Drawing.Size(38, 130);
             this.toolStripEx2.TabIndex = 1;
             // 
             // ConocenosToolStripButton
@@ -250,6 +250,8 @@ namespace Proyecto_Final.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ribbonControlAdv1);
             this.Margin = new System.Windows.Forms.Padding(4);
