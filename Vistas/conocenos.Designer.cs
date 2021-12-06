@@ -60,7 +60,7 @@ namespace Proyecto_Final.Vistas
             this.groupBox1.Controls.Add(this.infolbl);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Handwriting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(25, 42);
+            this.groupBox1.Location = new System.Drawing.Point(42, 165);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -129,7 +129,7 @@ namespace Proyecto_Final.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1371, 594);
+            this.ClientSize = new System.Drawing.Size(1385, 694);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConocenosView";

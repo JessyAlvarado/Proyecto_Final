@@ -21,6 +21,5 @@ namespace Proyecto_Final.Vistas
             AgendarCitaController controller = new AgendarCitaController(this);
         }
 
-        
     }
 }

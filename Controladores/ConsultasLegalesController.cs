@@ -94,7 +94,7 @@ namespace Proyecto_Final.Controladores
 
             consultas.Servicios = vista.ServiciosComboBox.Text;
             consultas.Nombre = vista.NombreTextBox.Text;
-            consultas.NumeroID= Convert.ToDecimal(vista.NumidTextBox.Text);
+            consultas.NumeroID= Convert.ToInt32(vista.NumidTextBox.Text);
             consultas.Descripcion = vista.DescripcionTextBox.Text;
 
             bool inserto = ConsultasDAO.ConsultasLegales(consultas);

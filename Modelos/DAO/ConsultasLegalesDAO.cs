@@ -28,7 +28,7 @@ namespace Proyecto_Final.Modelos.DAO
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@Servicios", SqlDbType.NVarChar, 50).Value = consultas.Servicios;
                 comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 50).Value = consultas.Nombre;
-                comando.Parameters.Add("@NumeroIde", SqlDbType.Decimal).Value = consultas.NumeroID;
+                comando.Parameters.Add("@NumeroIde", SqlDbType. Int).Value = consultas.NumeroID;
                 comando.Parameters.Add("@Descripcion", SqlDbType.NVarChar, 80).Value = consultas.Descripcion;
                 comando.ExecuteNonQuery();
                 return true;
