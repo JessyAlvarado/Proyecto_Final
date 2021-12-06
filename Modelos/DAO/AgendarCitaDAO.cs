@@ -29,7 +29,7 @@ namespace Proyecto_Final.Modelos.DAO
                 comando.Parameters.Add("@NombreCliente", SqlDbType.NVarChar, 80).Value = Agendar.NombreCliente;
                 comando.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = Agendar.Email;
                 comando.Parameters.Add("@Direccion", SqlDbType.NVarChar, 80).Value = Agendar.Direccion;
-                comando.Parameters.Add("@DescripcionCaso", SqlDbType.NVarChar, 100).Value = Agendar.DescripcionProblema;
+                comando.Parameters.Add("@DescripcionCaso", SqlDbType.NVarChar, 100).Value = Agendar.DescripcionCaso;
                 comando.ExecuteNonQuery();
                 return true;
                 MiConexion.Close();

@@ -121,6 +121,7 @@ namespace Proyecto_Final.Vistas
             this.IdTextBox.Location = new System.Drawing.Point(435, 54);
             this.IdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.ReadOnly = true;
             this.IdTextBox.Size = new System.Drawing.Size(268, 27);
             this.IdTextBox.TabIndex = 9;
             // 
@@ -165,9 +166,9 @@ namespace Proyecto_Final.Vistas
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(9, 81);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(791, 324);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
@@ -183,7 +184,7 @@ namespace Proyecto_Final.Vistas
             "Mercantiles",
             "Laborales"});
             this.ServiciosComboBox.Location = new System.Drawing.Point(435, 105);
-            this.ServiciosComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ServiciosComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(268, 32);
             this.ServiciosComboBox.TabIndex = 15;
@@ -242,13 +243,15 @@ namespace Proyecto_Final.Vistas
             // 
             // ConsultasDataGridView
             // 
+            this.ConsultasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ConsultasDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.ConsultasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultasDataGridView.Location = new System.Drawing.Point(9, 426);
-            this.ConsultasDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConsultasDataGridView.Location = new System.Drawing.Point(-2, 439);
+            this.ConsultasDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.ConsultasDataGridView.Name = "ConsultasDataGridView";
             this.ConsultasDataGridView.RowHeadersWidth = 51;
-            this.ConsultasDataGridView.Size = new System.Drawing.Size(985, 204);
+            this.ConsultasDataGridView.Size = new System.Drawing.Size(1013, 204);
             this.ConsultasDataGridView.TabIndex = 24;
             // 
             // errorProvider1

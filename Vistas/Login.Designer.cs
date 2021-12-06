@@ -87,6 +87,7 @@ namespace Proyecto_Final.Vistas
             this.ClaveTextBox.Location = new System.Drawing.Point(256, 214);
             this.ClaveTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(268, 27);
             this.ClaveTextBox.TabIndex = 4;
             this.ClaveTextBox.Text = "123";

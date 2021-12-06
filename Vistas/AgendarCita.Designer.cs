@@ -134,6 +134,7 @@ namespace Proyecto_Final.Vistas
             this.IDTXT.Location = new System.Drawing.Point(313, 100);
             this.IDTXT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.IDTXT.Name = "IDTXT";
+            this.IDTXT.ReadOnly = true;
             this.IDTXT.Size = new System.Drawing.Size(268, 27);
             this.IDTXT.TabIndex = 8;
             // 
@@ -183,11 +184,10 @@ namespace Proyecto_Final.Vistas
             "Mercantiles",
             "Laborales"});
             this.ServiciosComboBox.Location = new System.Drawing.Point(312, 160);
-            this.ServiciosComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ServiciosComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ServiciosComboBox.Name = "ServiciosComboBox";
             this.ServiciosComboBox.Size = new System.Drawing.Size(268, 24);
             this.ServiciosComboBox.TabIndex = 14;
-            
             // 
             // pictureBox1
             // 
@@ -246,6 +246,8 @@ namespace Proyecto_Final.Vistas
             // 
             // AgendardataGridView
             // 
+            this.AgendardataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AgendardataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.AgendardataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AgendardataGridView.Location = new System.Drawing.Point(0, 508);
@@ -285,10 +287,9 @@ namespace Proyecto_Final.Vistas
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AgendarCitaView";
             this.Text = "AgendarCita";
-          
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgendardataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

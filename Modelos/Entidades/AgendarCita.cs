@@ -13,7 +13,7 @@ namespace Proyecto_Final.Modelos.Entidades
         public string NombreCliente { get; set; }
         public string Email { get; set; }
         public string Direccion { get; set; }
-        public string DescripcionProblema
+        public string DescripcionCaso
         {
             get; set;
 

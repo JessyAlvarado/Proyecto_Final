@@ -102,7 +102,7 @@ namespace Proyecto_Final.Controladores
             Agendar.NombreCliente = vista.NombreClienteTextBox.Text;
             Agendar.Email = vista.EmailTextBox.Text;
             Agendar.Direccion = vista.DireccionTextBox.Text;
-            Agendar.DescripcionProblema = vista.DescripcionProblemaTextBox.Text;
+            Agendar.DescripcionCaso = vista.DescripcionProblemaTextBox.Text;
 
             bool inserto = AgendarCitaDAO.CreacionNuevaCita(Agendar);
 

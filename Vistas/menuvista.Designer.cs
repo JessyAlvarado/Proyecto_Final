@@ -55,13 +55,13 @@ namespace Proyecto_Final.Vistas
             // 
             // ribbonControlAdv1
             // 
-            this.ribbonControlAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.ribbonControlAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ribbonControlAdv1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem1);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem2);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem3);
-            this.ribbonControlAdv1.Location = new System.Drawing.Point(0, -2);
+            this.ribbonControlAdv1.Location = new System.Drawing.Point(-3, -1);
             this.ribbonControlAdv1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControlAdv1.MenuButtonFont = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ribbonControlAdv1.MenuButtonText = "";
@@ -79,9 +79,9 @@ namespace Proyecto_Final.Vistas
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
-            this.ribbonControlAdv1.Size = new System.Drawing.Size(1068, 215);
+            this.ribbonControlAdv1.Size = new System.Drawing.Size(1330, 192);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.ribbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:";
             this.ribbonControlAdv1.TabIndex = 0;
@@ -148,6 +148,9 @@ namespace Proyecto_Final.Vistas
             // 
             // ribbonControlAdv1.ribbonPanel2
             // 
+            this.toolStripTabItem2.Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
             this.toolStripTabItem2.Panel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
@@ -177,7 +180,7 @@ namespace Proyecto_Final.Vistas
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(53, 130);
+            this.toolStripEx2.Size = new System.Drawing.Size(38, 107);
             this.toolStripEx2.TabIndex = 1;
             // 
             // ConocenosToolStripButton
@@ -187,7 +190,7 @@ namespace Proyecto_Final.Vistas
             this.ConocenosToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ConocenosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ConocenosToolStripButton.Name = "ConocenosToolStripButton";
-            this.ConocenosToolStripButton.Size = new System.Drawing.Size(29, 127);
+            this.ConocenosToolStripButton.Size = new System.Drawing.Size(29, 87);
             this.ConocenosToolStripButton.Text = "consultar";
             this.ConocenosToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ConocenosToolStripButton.Click += new System.EventHandler(this.ConocenosToolStripButton_Click_1);
@@ -235,7 +238,7 @@ namespace Proyecto_Final.Vistas
             this.AgendarToolStripButton.Image = global::Proyecto_Final.Properties.Resources.Agendasss;
             this.AgendarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AgendarToolStripButton.Name = "AgendarToolStripButton";
-            this.AgendarToolStripButton.Size = new System.Drawing.Size(29, 110);
+            this.AgendarToolStripButton.Size = new System.Drawing.Size(29, 127);
             this.AgendarToolStripButton.Text = "toolStripButton2";
             this.AgendarToolStripButton.Click += new System.EventHandler(this.AgendarToolStripButton_Click_1);
             // 
@@ -269,7 +272,7 @@ namespace Proyecto_Final.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.CaptionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1329, 602);
             this.Controls.Add(this.ribbonControlAdv1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.IsMdiContainer = true;
