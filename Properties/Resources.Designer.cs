@@ -63,6 +63,16 @@ namespace Proyecto_Final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abogado {
+            get {
+                object obj = ResourceManager.GetObject("abogado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap agendar {
             get {
                 object obj = ResourceManager.GetObject("agendar", resourceCulture);
@@ -83,9 +93,69 @@ namespace Proyecto_Final.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendario {
+            get {
+                object obj = ResourceManager.GetObject("calendario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap consultas {
             get {
                 object obj = ResourceManager.GetObject("consultas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap empresa {
+            get {
+                object obj = ResourceManager.GetObject("empresa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap empresa__1_ {
+            get {
+                object obj = ResourceManager.GetObject("empresa (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario__2_ {
+            get {
+                object obj = ResourceManager.GetObject("usuario (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_06_at_4_42_27_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-06 at 4.42.27 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_06_at_5_01_20_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-06 at 5.01.20 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

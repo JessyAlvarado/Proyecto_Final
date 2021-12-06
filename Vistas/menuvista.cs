@@ -69,7 +69,21 @@ namespace Proyecto_Final.Vistas
             vistaAgendar = null;
         }
 
-        private void toolStripEx4_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+       
+
+        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
+        {
+            vistaConocenos = null;
+        }
+
+        
+
+        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
+        {
+            vistaConocenos = null;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
         {
             if (vistaConocenos == null)
             {
@@ -83,12 +97,6 @@ namespace Proyecto_Final.Vistas
                 vistaConocenos.Activate();
             }
         }
-
-        private void Vista_FormClosedConocenos(object sender, FormClosedEventArgs e)
-        {
-            vistaConocenos = null;
-        }
-
     }
 }
 
