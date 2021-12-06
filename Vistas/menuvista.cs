@@ -52,7 +52,7 @@ namespace Proyecto_Final.Vistas
             if (vistaConocenos == null)
             {
                 vistaConocenos = new ConocenosView();
-              
+                vistaConocenos.MdiParent = this;
                 vistaConocenos.FormClosed += Vista_FormClosedConocenos;
                 vistaConocenos.Show();
             }
