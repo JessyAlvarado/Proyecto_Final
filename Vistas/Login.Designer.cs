@@ -84,7 +84,6 @@ namespace Proyecto_Final.Vistas
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(268, 27);
             this.EmailTextBox.TabIndex = 3;
-            this.EmailTextBox.Text = "alexcastro@gmail.com";
             // 
             // ClaveTextBox
             // 
@@ -95,7 +94,6 @@ namespace Proyecto_Final.Vistas
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(268, 27);
             this.ClaveTextBox.TabIndex = 4;
-            this.ClaveTextBox.Text = "123";
             // 
             // button2
             // 
@@ -144,7 +142,7 @@ namespace Proyecto_Final.Vistas
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.pictureBox1.Image = global::Proyecto_Final.Properties.Resources.usuario__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(254, 75);
+            this.pictureBox1.Location = new System.Drawing.Point(278, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(207, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
